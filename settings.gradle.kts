@@ -13,5 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "TP2_Kotlin"
+rootProject.name = "TP01"
 include(":app")

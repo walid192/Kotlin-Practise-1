@@ -1,3 +1,12 @@
 <resources>
-    <string name="app_name">TP2_Kotlin</string>
+    <string name="app_name">TP01</string>
+    <string name="action_settings">Settings</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="logo">INSAT LOGO</string>
+    <string name="Email">Email</string>
+    <string name="password">Password</string>
+    <string name="Souvenir">Se Souvenir De Moi</string>
+    <string name="login">Se Connecter</string>
+
+
 </resources>

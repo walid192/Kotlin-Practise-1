@@ -6,37 +6,26 @@
     android:layout_height="match_parent"
     tools:context=".ImageActivity">
 
-    <androidx.appcompat.widget.AppCompatImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="305dp"
-        android:layout_marginEnd="16dp"
-        android:layout_marginBottom="495dp"
-        android:adjustViewBounds="true"
-        app:layout_constraintBottom_toTopOf="@+id/pick_image"
-        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginStart="176dp"
+        android:text="Choose Image"
+        android:visibility="visible"
+        app:layout_constraintBaseline_toBottomOf="parent"
+        app:layout_constraintBaseline_toTopOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        tools:layout_editor_absoluteY="97dp"
+        tools:visibility="visible" />
 
-    <com.google.android.material.floatingactionbutton.FloatingActionButton
-        android:id="@+id/pick_image"
-        android:layout_width="71dp"
-        android:layout_height="57dp"
-        android:layout_gravity="bottom|end"
-        android:layout_margin="16dp"
-        android:layout_marginStart="338dp"
-        android:layout_marginTop="344dp"
-        android:layout_marginEnd="177dp"
-        android:layout_marginBottom="658dp"
-        android:contentDescription="@string/chooseImage"
-        android:src="@drawable/addlogo"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.509"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.957" />
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="497dp"
+        android:layout_height="369dp"
+        android:layout_below="@id/button"
+        android:scaleType="fitCenter"
+        tools:layout_editor_absoluteX="-2dp"
+        tools:layout_editor_absoluteY="234dp"
+        tools:ignore="MissingConstraints" />
 </androidx.constraintlayout.widget.ConstraintLayout>
