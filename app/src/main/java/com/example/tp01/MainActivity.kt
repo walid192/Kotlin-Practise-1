@@ -49,7 +49,6 @@ class MainActivity : AppCompatActivity() {
             val intent = Intent(this, WelcomeActivity::class.java)
 
             if (email != correctEmail || pass != correctPassword) {
-                startActivity(intent)
                 showToast("Email ou mot de passe incorrect")
             }
             else {

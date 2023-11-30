@@ -10,7 +10,6 @@ import androidx.activity.result.contract.ActivityResultContracts
 import com.example.tp01.databinding.ActivityImageBinding
 
 class ImageActivity : AppCompatActivity() {
-    private val PICK_IMAGE_REQUEST = 1
     private lateinit var imageView: ImageView
     private lateinit var binding: ActivityImageBinding
 
@@ -22,7 +21,7 @@ class ImageActivity : AppCompatActivity() {
         setContentView(binding.root)
 
         imageView = binding.imageView
-        val btnChooseImage: Button = binding.button
+        val btnChooseImage = binding.pickImage
 
         btnChooseImage.setOnClickListener {
             openGallery()
@@ -30,8 +29,8 @@ class ImageActivity : AppCompatActivity() {
     }
 
     private fun openGallery() {
-        val intent = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
-        getResult.launch(intent)
+        val imgPick = Intent(Intent.ACTION_PICK, MediaStore.Images.Media.EXTERNAL_CONTENT_URI)
+        getResult.launch(imgPick)
     }
 
     private val getResult = registerForActivityResult(ActivityResultContracts.StartActivityForResult()) { result ->
