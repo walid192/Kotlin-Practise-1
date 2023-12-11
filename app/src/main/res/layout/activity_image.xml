@@ -33,7 +33,7 @@
         android:layout_marginBottom="658dp"
         android:contentDescription="@string/chooseImage"
         android:src="@drawable/addlogo"
-        app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.509"
         app:layout_constraintStart_toStartOf="parent"
